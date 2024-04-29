@@ -37,7 +37,7 @@
       <input type="text" id="dni" name="dni"><br><br>
       
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required><br><br> 
+      <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ title="Introduce un correo electrónico válido" required><br><br> 
       
       <input type="submit" value="Continuar">
     </form> 
