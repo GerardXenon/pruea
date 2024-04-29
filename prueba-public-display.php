@@ -28,10 +28,10 @@
       <input type="text" id="indicativo" name="indicativo" required><br><br> 
       
       <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" pattern="[A-Za-z]{2,}" title="Debe tener al menos 2 letras" required><br><br>
+      <input type="text" id="nombre" name="nombre" pattern="[A-Za-z]{2,}" title="(Debe tener al menos 2 letras)" required><br><br>
       
       <label for="Apellidos">Apellidos:</label>
-      <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-z]{2,}" title="Debe tener al menos 2 letras" required><br><br> 
+      <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-z]{2,}" title="(Debe tener al menos 2 letras)" required><br><br> 
       
       <label for="dni">DNI (opcional):</label>
       <input type="text" id="dni" name="dni"><br><br>
