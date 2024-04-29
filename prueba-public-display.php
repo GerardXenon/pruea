@@ -22,7 +22,7 @@
     <title>Documentación y Acreditaciones</title>
   </head> 
   <body> 
-    <h2>Formulario de Registro</h2>
+    <h2>Documentación y Acreditaciones</h2>
     <form action="procesar_registro.php" method="POST">
       <label for="indicativo">Indicativo:</label>
       <input type="text" id="indicativo" name="indicativo" required><br><br> 
