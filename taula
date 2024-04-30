@@ -1,0 +1,13 @@
+<?php //obviar esta linea
+
+add_filter( 'the_content', 'dcms_list_data');
+funcion dcms_list_data( $content ) {
+$slug_page = 
+$table_name = 'Taula RUTA'
+
+if (is_page($slug_page)){
+global $wpdb;
+$items = $wpdb->get_results("SELECT * FROM `$table_name`");
+$result = '';
+
+foreach ($items as $item) {
