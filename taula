@@ -12,9 +12,9 @@ $result = '';
 
 foreach ($items as $item) {
 $result .= '<tr>
-<td>'.$item->'.Nom dada.'</td>
-<td>'.$item->'.Codi ruta.'</td>
-<td>'.$item->'.Nom Ruta.'</td>
+<td>'.$item->'.Nom dada.'</td> <td>'.Tipus.'</td> <td>'.Descripció.'</td> <td>'.Exemple i descripció.'</td>
+<td>'.$item->'.Codi ruta.'</td> <td>'.Text.'</td> <td>'.Referència ruta.'</td> <td>'.DMRC-1 (Monument Romànic1). Codi únic.'</td>
+<td>'.$item->'.Nom Ruta.'</td> <td>'.Text.'</td> <td>'.Nom Ruta.'</td>
 </tr>;
 {
 
