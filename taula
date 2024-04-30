@@ -11,3 +11,14 @@ $items = $wpdb->get_results("SELECT * FROM `$table_name`");
 $result = '';
 
 foreach ($items as $item) {
+$result .= '<tr>
+<td>'.$item->'.Nom dada.'</td>
+<td>'.$item->'.Codi ruta.'</td>
+<td>'.$item->'.Nom Ruta.'</td>
+</tr>;
+{
+
+$template = '<table clas="table-data">
+
+<tr>
+<th>
