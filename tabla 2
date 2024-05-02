@@ -1,0 +1,41 @@
+<html lang="es"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información sobre el Sitio Web</title>
+<style>
+table { width: 100%; border-collapse: collapse; } 
+th, td { border: 1px solid black; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+<h2>Información sobre el Sitio Web</h2>
+<table>
+<tr>
+<th>Nom dada</th>
+<th>Tipus</th> 
+<th>Descripció</th> 
+<th>Exemples i descripció</th> 
+</tr>
+<tr>
+<td>Urbbll.com</td>
+<td>Arial, sans-serif</td>
+<td>Registre de monument</td>
+<td><ul>
+<li><a href="https://ea3mm.org/index.php/ca/ 1</a></li>
+</ul></td>
+</tr>
+</table>
+<title>Continuar</title>
+<script>
+funcion almacenar informacion(){var informacion = "informacion que quieras almacenar";
+console.log("informacion almacenada",informcion);}
+</script>
+</head>
+</body>
+
+<h2>Continuar</h2>
+<button onclick="almacenarInformacion()">Continuar</button>
+</body>
+</html>
