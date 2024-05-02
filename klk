@@ -31,5 +31,5 @@ th, td { border: 1px solid black; padding: 8px; text-align: left; }
 <body>
 <table>
 <tr>
-<th>
+<th>Nom dada</th> <th>Tipus</th> <th>Desripció</th> <th
 
