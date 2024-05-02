@@ -1,0 +1,32 @@
+<?php 
+$servername = "localhost"; // Cambia esto si tu servidor MySQL no está en localhost 
+$username = "usuario"; // Cambia esto por tu nombre de usuario de MySQL 
+$password = "contraseña"; // Cambia esto por tu contraseña de MySQL 
+$dbname = "basededatos"; // Cambia esto por el nombre de tu base de datos MySQL // Crear conexión 
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Verificar conexión
+if ($conn->connect_error) { die("Conexión fallida: " . $conn->connect_error); }
+?>
+<?php
+// Verificar si se envió el formulario
+if ($_SERVER["REQUEST_METHOD"] == "POST") { // Obtener los datos del formulario 
+$nombre = $_POST["nombre"]; 
+$apellido = $_POST["apellido"]; 
+// Preparar y ejecutar la consulta SQL para insertar los datos en la tabla
+$sql = "INSERT INTO tabla (nombre, apellido) VALUES ('$nombre', '$apellido')"; 
+if ($conn->query($sql) === TRUE) { echo "Datos almacenados correctamente"; }
+else { echo "Error al almacenar datos: " . $conn->error; } } 
+?>
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Almacenamiento</title>
+</head>
+<body>
+<h2>Formulario de Almacenamiento</h2>
+<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> Nombre: <input type="text" name="nombre"><br><br> Apellido: <input type="text" name="apellido"><br><br> <input type="submit" value="Enviar">
+</form>
+</body>
+</html>
