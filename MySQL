@@ -22,10 +22,10 @@ else { echo "Error al almacenar datos: " . $conn->error; } }
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulario de Almacenamiento</title>
+<title>Activación de monumento</title>
 </head>
 <body>
-<h2>Formulario de Almacenamiento</h2>
+<h2>Activación de monumento</h2>
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> Nombre: <input type="text" name="nombre"><br><br> Apellido: <input type="text" name="apellido"><br><br> <input type="submit" value="Enviar">
 </form>
 </body>
